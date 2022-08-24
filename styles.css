@@ -1,0 +1,263 @@
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+    /* primary */
+  --clr-darkcyan: 158, 36%, 37%;
+  --clr-cream: 30, 38%, 92%;
+
+    /* neutral */
+  --clr-verydarkblue: 212, 21%, 14%;
+  --clr-darkgrayishblue: 228, 12%, 48%;
+  --clr-white: 0, 0%, 100%;
+
+  /* font-sizes */
+  --fs-300: 2.5rem;
+  --fs-200: 1.1rem;
+  --fs-100: 1rem;
+
+  /* font-families */
+  --ff-sans: 'Montserrat', sans-serif;
+  --ff-serif: 'Fraunces', serif;
+}
+
+@media (min-width: 35em) {
+  :root {
+      /* font-sizes*/
+      --fs-300: 2.8rem;
+      --fs-200: 1.5rem;
+      --fs-100: 1.1rem;
+  }
+}
+
+/* ------------------------ */
+/* Reset                    */
+/* ------------------------ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 500;
+}
+
+/* set up the body */
+body{
+  font-family: var(--ff-sans);
+  font-size: 14px;
+  background-color: hsl( var(--clr-cream) );
+  color: hsl( var(--clr-verydarkblue) );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* makes images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* makes form elements easier to work with */
+input,
+button,
+textarea,
+select{
+  font: inherit;
+}
+
+/* ------------------------ */
+/* Utility classes          */
+/* ------------------------ */
+
+.bg-cyan {
+  background-color: hsl( var(--clr-darkcyan) );
+}
+
+.clr-cyan {
+  color: hsl( var(--clr-darkcyan) );
+}
+
+.bg-white {
+  background-color: hsl( var(--clr-white) );
+}
+
+.clr-dark {
+  color: hsl( var(--clr-verydarkblue) );
+}
+
+.clr-grayish {
+    color: hsl( var(--clr-darkgrayishblue) );
+}
+
+.ff-serif {
+  font-family: var(--ff-serif);
+}
+
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.4rem;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 0.05rem;
+}
+
+.line-height-1 {
+  line-height: 1.429rem;
+}
+
+.line-height-2 {
+  line-height: 2.857rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.decoration-line {
+  text-decoration-line: line-through;
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+/* ------------------ */
+/* Components         */
+/* ------------------ */
+
+.card {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 10px;
+}
+
+.card__header {
+  width: 100%;
+  height: 45%;
+  border-radius: 10px 10px 0 0;
+  background-image: url('./images/image-product-mobile.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 25px;
+}
+
+.description {
+  margin: 15px 60px 15px 0;
+}
+
+.og-price {
+  position: relative;
+  margin-left: 20px;
+  bottom: 0.5rem;
+}
+
+.button-cart {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  color: hsl( var(--clr-white) );
+  padding: 1.1rem;
+}
+
+.button-cart img {
+  margin-right: 10px;
+}
+
+.button-cart:hover {
+  background-color: #1a4031;
+  cursor: pointer;
+}
+
+@media (min-width: 45em) {
+  .card {
+    width: 38vw;
+    height: 57vh;
+    display: flex;
+  }
+
+  .card__header {
+    width: 45%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-image: url('./images/image-product-desktop.jpg');
+  }
+
+  .card__content {
+    width: 55%;
+    margin: 0;
+    padding: 2.5rem;
+  }
+
+  .card__content h2 {
+      margin-bottom: 5px;
+  }
+
+  .description {
+    margin: 15px 15px 20px 0;
+  }
+
+  .button-cart{
+    align-self: center;
+  }
+
+  .button-cart img {
+    margin-right: 15px;
+  }
+}
