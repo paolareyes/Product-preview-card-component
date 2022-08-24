@@ -242,17 +242,17 @@ select{
 
   .card__content {
     width: 50%;
-    height: 100%;
-    margin: 0;
-    padding: 1.5rem;
+    height: 90%;
+    gap: 0;
     justify-content: space-evenly;
   }
 
   .description {
-    margin: 0 15px 0 0;
+    margin-right: 15px;
   }
 
   .button-cart{
+    margin: 0;
     align-self: center;
   }
 }
