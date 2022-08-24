@@ -227,10 +227,9 @@ select{
 
 @media (min-width: 45em) {
   .card {
-    width: 38vw;
-    height: 57vh;
+    max-width: 38vw;
+    max-height: 57vh;
     display: flex;
-    justify-content: space-evenly;
   }
 
   .card__header {
@@ -242,8 +241,10 @@ select{
 
   .card__content {
     width: 50%;
+    height: 100%;
     margin: 0;
     padding: 2.5rem;
+    justify-content: space-evenly;
   }
 
   .card__content h2 {
