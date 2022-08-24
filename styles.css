@@ -230,17 +230,18 @@ select{
     width: 38vw;
     height: 57vh;
     display: flex;
+    justify-content: space-evenly;
   }
 
   .card__header {
-    width: 45%;
+    width: 50%;
     height: 100%;
     border-radius: 10px 0 0 10px;
     background-image: url('./images/image-product-desktop.jpg');
   }
 
   .card__content {
-    width: 55%;
+    width: 50%;
     margin: 0;
     padding: 2.5rem;
   }
