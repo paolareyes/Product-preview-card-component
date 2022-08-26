@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/paolareyes/Product-preview-card-component)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-solution-using-flexbox-2szTwFdzUy)
 - Live Site URL: [Vercel](https://product-preview-card-component-opal.vercel.app/)
 
 ## My process
