@@ -174,7 +174,7 @@ select{
 /* ------------------ */
 
 .card {
-  width: 90vw;
+  max-width: 90vw;
   height: 90vh;
   border-radius: 10px;
 }
@@ -228,8 +228,8 @@ select{
 
 @media (min-width: 45em) {
   .card {
-    max-width: 38vw;
-    max-height: 57vh;
+    max-width: 35rem;
+    height: 30rem;
     display: flex;
   }
 
@@ -252,7 +252,7 @@ select{
   }
 
   .button-cart{
-    margin: 0;
+    margin: 20px 0 0 0;
     align-self: center;
   }
 }
